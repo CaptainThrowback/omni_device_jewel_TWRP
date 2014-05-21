@@ -81,7 +81,7 @@ BOARD_VOLD_MAX_PARTITIONS := 39
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/htc/jewel/rootdir/etc/fstab.qcom
-TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/jewel/zImage
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/jewel/zImage
 
 # TWRP
 DEVICE_RESOLUTION := 720x1280
@@ -96,7 +96,4 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
-TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.590337/leds/lcd-backlight/brightness
-TW_MAX_BRIGHTNESS := 255
-BUILD_OLD_SYS_PROPS := true
-COMMON_GLOBAL_CFLAGS += -DBUILD_OLD_SYS_PROPS
+TW_NO_SCREEN_BLANK := true
