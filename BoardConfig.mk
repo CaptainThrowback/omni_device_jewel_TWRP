@@ -81,7 +81,7 @@ BOARD_VOLD_MAX_PARTITIONS := 39
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/htc/jewel/rootdir/etc/fstab.qcom
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/jewel/zImage
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 # TWRP
 DEVICE_RESOLUTION := 720x1280
@@ -97,3 +97,4 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
+TW_HTC_LED := true
