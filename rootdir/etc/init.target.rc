@@ -22,6 +22,7 @@ on init
     symlink /storage/usbdisk /usbdisk
     symlink /storage/usbdisk /mnt/usbdisk
 
+    setprop ro.usb.idproduct.adb 0df5
     setprop ro.usb.idproduct.ums 0ce9
     setprop ro.usb.idproduct.mtp 0f91
     setprop ro.usb.idproduct.mtp_adb 0df5

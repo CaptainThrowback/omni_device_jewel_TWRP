@@ -97,4 +97,4 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
-TW_HTC_LED := true
+TW_BATTERY_LED := htc-legacy
