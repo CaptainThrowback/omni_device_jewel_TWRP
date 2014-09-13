@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #
+=======
+# Copyright (C) 2013 The CyanogenMod Project
+>>>>>>> 60dbd21... Add chargeled program for recovery
 # Copyright (C) 2012 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
