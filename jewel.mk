@@ -58,9 +58,10 @@ PRODUCT_COPY_FILES += \
     device/htc/jewel/idc/projector_input.idc:system/usr/idc/projector_input.idc
 
 # Recovery
-PRODUCT_COPY_FILES += \
-    device/htc/jewel/rootdir/etc/fstab.qcom:recovery/root/fstab.qcom \
-    device/htc/jewel/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc \
+    texfat.ko \
+    twrp.fstab
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)

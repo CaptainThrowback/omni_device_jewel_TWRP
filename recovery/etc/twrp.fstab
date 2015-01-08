@@ -3,9 +3,9 @@
 /cache          ext4    /dev/block/platform/msm_sdcc.1/by-name/cache                                         flags=display="Cache"
 /system         ext4    /dev/block/platform/msm_sdcc.1/by-name/system                                        flags=display="System"
 /data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata
-#/misc          emmc    /dev/block/platform/msm_sdcc.1/by-name/misc
+/misc           emmc    /dev/block/platform/msm_sdcc.1/by-name/misc
 /recovery       emmc    /dev/block/platform/msm_sdcc.1/by-name/recovery
-#/sd-ext        ext4    /dev/block/mmcblk1p2                                                                 flags=removable
 /devlog         ext4    /dev/block/platform/msm_sdcc.1/by-name/devlog
 /external_sd    vfat    /dev/block/mmcblk1p1                         /dev/block/mmcblk1                      flags=display="Micro SDcard";storage;wipeingui;removable;andsec
 /usb-otg        vfat    /dev/block/sda1                              /dev/block/sda                          flags=display="USB-OTG";storage;wipeingui;removable
+/sd-ext         ext4    /dev/block/mmcblk1p2                                                                 flags=removable

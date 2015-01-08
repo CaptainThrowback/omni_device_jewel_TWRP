@@ -1,0 +1,15 @@
+on early-init
+    setenforce permissive
+
+on init
+    # For exfat support
+    insmod /system/lib/modules/texfat.ko
+
+on boot
+    setprop usb.vendor 0bb4
+    setprop usb.product.adb 0ff9
+    setprop usb.product.mtpadb 0ca8
+    start chargeled
+
+service chargeled /sbin/chargeled
+    disabled
