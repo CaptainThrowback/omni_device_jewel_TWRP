@@ -61,7 +61,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     texfat.ko \
-    twrp.fstab
+    twrp.fstab \
+    twrp.fstab.unifiedstorage \
+    fstab_swap.sh
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
